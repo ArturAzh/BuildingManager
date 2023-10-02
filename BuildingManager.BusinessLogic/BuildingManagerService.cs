@@ -16,6 +16,7 @@ public class BuildingManagerService
 
     public void DisplayBuildingStructure()
     {
+        //use existing Sharprompt package to arrange console interface
         var selectedBuildingItem = Prompt.Select($"Select building Item", _buildingItems);
 
         var subItems = GetSubItems(selectedBuildingItem);
